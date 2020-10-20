@@ -6,10 +6,6 @@ EXPOSE 8080/tcp
 
 CMD ["npm", "start"]
 
-COPY package.json .
-COPY index.html .
-COPY room.html .
-COPY index.js .
-COPY client.js .
+COPY package.json index.html room.html index.js client.js ./
 
 RUN npm install
