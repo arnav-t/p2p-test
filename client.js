@@ -1,4 +1,4 @@
-let sock = new WebSocket('ws://localhost:8080');
+let sock = new WebSocket('ws://' + window.location.host);
 
 sock.onopen = init;
 sock.onmessage = recv;
