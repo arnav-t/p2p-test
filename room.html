@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Some room</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            min-height: 20px;
+            border: none;
+            resize: none;
+            border-radius: 8px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: none;
+            min-width: 50vw;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+        }
+
+        .cont {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .msg {
+            background-color: gray;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .them {
+            float: left;
+        }
+
+        .me {
+            float: right;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a very cool room.</h1>
+    <div>
+        <input type="text">
+        <button onclick="send">Send</button>
+    </div>
+    <ul></ul>
+    <script src="./client.js"></script>
+</body>
+</html>
